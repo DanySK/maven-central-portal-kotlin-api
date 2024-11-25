@@ -1,3 +1,17 @@
+## 1.0.0 (2024-11-25)
+
+### Features
+
+* generate from the Central Publisher API ([e3397ce](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e3397cea4628d298e4aa5d8ce7b0559e43b7fb24))
+
+### Build and continuous integration
+
+* add CODECOV_TOKEN ([ff25ca9](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/ff25ca90d7b6a643798defb079f32f7e9b2b9497))
+
+### General maintenance
+
+* fix the project name ([0c2812f](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/0c2812fc52d280fb1502cb7a8532f37d596d6c83))
+
 ## [0.2.2](https://github.com/DanySK/template-for-kotlin-multiplatform-projects/compare/0.2.1...0.2.2) (2024-11-05)
 
 ### Dependency updates
