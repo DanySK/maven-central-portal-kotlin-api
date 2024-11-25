@@ -1,17 +1,14 @@
 import org.danilopianini.gradle.mavencentral.JavadocJar
 import org.gradle.internal.os.OperatingSystem
-import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
-import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
     alias(libs.plugins.dokka)
     alias(libs.plugins.gitSemVer)
     alias(libs.plugins.kotlin.multiplatform)
-    alias(libs.plugins.kotest.multiplatform)
-    alias(libs.plugins.kotlin.qa)
+    alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.npm.publish)
-    alias(libs.plugins.multiJvmTesting)
+    alias(libs.plugins.openapi.generator)
     alias(libs.plugins.publishOnCentral)
     alias(libs.plugins.taskTree)
 }
@@ -23,40 +20,58 @@ repositories {
     mavenCentral()
 }
 
-multiJvm {
-    jvmVersionForCompilation.set(21)
+openApiGenerate {
+    inputSpec = rootProject.projectDir.resolve("openapi").resolve("central-publisher-api.json").absolutePath
+    packageName = "org.danilopianini.centralpublisher.impl"
+    apiPackage = "org.danilopianini.centralpublisher.api"
+    generatorName = "kotlin"
+    library = "multiplatform"
+    groupId = project.group.toString()
+    id = project.name
 }
 
-@OptIn(ExperimentalWasmDsl::class)
+val openApiOutputDir = tasks.openApiGenerate.flatMap { it.outputDir }
+
+val copyDocs by tasks.registering(DefaultTask::class) {
+    doLast {
+        file(openApiOutputDir.map { "$it/README.md" })
+            .copyTo(rootProject.rootDir.resolve("README.md"), overwrite = true)
+        rootProject.rootDir.resolve("docs").mkdirs()
+        file(openApiOutputDir.map { "$it/docs" })
+            .copyRecursively(rootProject.rootDir.resolve("docs"), overwrite = true)
+    }
+    dependsOn(tasks.openApiGenerate)
+}
+
+tasks.openApiGenerate.configure {
+    finalizedBy(copyDocs)
+}
+
+//listOf(
+//    KotlinCompileCommon::class,
+//    MetadataDependencyTransformationTask::class,
+//    Kotlin2JsCompile::class,
+//    KotlinNativeCompile::class,
+//).forEach {
+//    tasks.withType(it).configureEach {
+//        dependsOn(copyReadme)
+//    }
+//}
+
 kotlin {
-    jvmToolchain(21)
+    jvmToolchain(8)
 
     jvm {
         testRuns["test"].executionTask.configure {
             useJUnitPlatform()
         }
-        compilations.all {
-            compileTaskProvider.configure {
-                compilerOptions {
-                    jvmTarget = JvmTarget.JVM_1_8
-                }
-            }
-        }
-    }
-
-    sourceSets {
-        val commonMain by getting { }
-        val commonTest by getting {
-            dependencies {
-                implementation(libs.bundles.kotlin.testing.common)
-                implementation(libs.bundles.kotest.common)
-            }
-        }
-        val jvmTest by getting {
-            dependencies {
-                implementation(libs.kotest.runner.junit5)
-            }
-        }
+//        compilations.all {
+//            compileTaskProvider.configure {
+//                compilerOptions {
+//                    jvmTarget = JvmTarget.JVM_1_8
+//                }
+//            }
+//        }
     }
 
     js(IR) {
@@ -65,16 +80,10 @@ kotlin {
         binaries.library()
     }
 
-    wasmJs {
-        browser()
-        nodejs()
-        d8()
-        binaries.library()
-    }
-
-    // Temporarily disabled due to https://youtrack.jetbrains.com/issue/KT-72858
-//    wasmWasi {
+//    wasmJs {
+//        browser()
 //        nodejs()
+//        d8()
 //        binaries.library()
 //    }
 
@@ -85,36 +94,70 @@ kotlin {
         }
     }
 
-    applyDefaultHierarchyTemplate()
+//    applyDefaultHierarchyTemplate()
     /*
      * Linux 64
      */
-    linuxX64(nativeSetup)
-    linuxArm64(nativeSetup)
+//    linuxX64(nativeSetup)
+//    linuxArm64(nativeSetup)
     /*
      * Win 64
      */
-    mingwX64(nativeSetup)
+//    mingwX64(nativeSetup)
     /*
      * Apple OSs
      */
-    macosX64(nativeSetup)
-    macosArm64(nativeSetup)
-    iosArm64(nativeSetup)
-    iosSimulatorArm64(nativeSetup)
-    watchosArm32(nativeSetup)
-    watchosArm64(nativeSetup)
-    watchosSimulatorArm64(nativeSetup)
-    tvosArm64(nativeSetup)
-    tvosSimulatorArm64(nativeSetup)
+    ios()
+//    ios {
+//        binaries { framework { freeCompilerArgs += "-Xobjc-generics" } }
+//    }
+//    macosX64(nativeSetup)
+//    macosArm64(nativeSetup)
+//    iosArm64(nativeSetup)
+//    iosSimulatorArm64(nativeSetup)
+//    watchosArm32(nativeSetup)
+//    watchosArm64(nativeSetup)
+//    watchosSimulatorArm64(nativeSetup)
+//    tvosArm64(nativeSetup)
+//    tvosSimulatorArm64(nativeSetup)
 
-    targets.all {
-        compilations.all {
-            compileTaskProvider.configure {
-                compilerOptions {
-                    allWarningsAsErrors = true
-                    freeCompilerArgs.add("-Xexpect-actual-classes")
-                }
+    sourceSets.configureEach {
+        kotlin.srcDir(openApiOutputDir.map { "$it/src/$name" })
+    }
+
+    sourceSets {
+        val commonMain by getting {
+            dependencies {
+                api(libs.bundles.ktor.client)
+                implementation(libs.kotlinx.coroutines.core)
+                implementation(libs.kotlinx.serialization.core)
+            }
+        }
+        val commonTest by getting {
+            dependencies {
+                implementation(kotlin("test"))
+                implementation(libs.ktor.client.mock)
+            }
+        }
+        val jvmMain by getting {
+            dependencies {
+                implementation(kotlin("stdlib-jdk7"))
+                implementation(libs.ktor.client.cio.jvm)
+            }
+        }
+        val jvmTest by getting {
+            dependencies {
+                implementation(kotlin("test-junit5"))
+            }
+        }
+        val jsMain by getting {
+            dependencies {
+                api(libs.ktor.client.js)
+            }
+        }
+        val iosMain by getting {
+            dependencies {
+                api(libs.ktor.client.ios)
             }
         }
     }
@@ -130,7 +173,8 @@ kotlin {
     configure(excludeTargets) {
         compilations.configureEach {
             cinterops.configureEach { tasks[interopProcessingTaskName].enabled = false }
-            compileTaskProvider.get().enabled = false
+            compileKotlinTaskProvider.configure { enabled = false }
+//            compileTaskProvider.get().enabled = false
             tasks[processResourcesTaskName].enabled = false
         }
         binaries.configureEach { linkTaskProvider.configure { enabled = false } }
