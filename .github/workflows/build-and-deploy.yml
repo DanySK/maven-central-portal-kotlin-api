@@ -86,7 +86,7 @@ jobs:
         if: startsWith(matrix.os, 'macos')
         uses: maxim-lobanov/setup-xcode@v1.6.0
         with:
-          xcode-version: '14.3.1'
+          xcode-version: '15.2.0'
       - uses: DanySK/build-check-deploy-gradle-action@3.5.23
         with:
           deploy-command: |
