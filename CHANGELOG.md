@@ -1,3 +1,14 @@
+## [1.0.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.0.0...1.0.1) (2024-11-25)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v1.7.22 ([#5](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/5)) ([25ac2a6](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/25ac2a6a8a07db7b361455a6b29352e20e0efbeb))
+
+### Build and continuous integration
+
+* do not retry releases on failure ([5a68063](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/5a6806342832a40e360995f0766051170e1673d4))
+* enable builds on Renovate PRs ([#31](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/31)) ([0de1331](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/0de1331a0bfb4fc3c04afda0848b0e01f4b4ec22))
+
 ## 1.0.0 (2024-11-25)
 
 ### Features
