@@ -1,4 +1,13 @@
 const publishCmd = `
+./gradlew copyDocs || exit 1
+if ! (git diff --quiet && git diff --staged --quiet); then
+    git config user.name 'Danilo Pianini [bot]' || exit 10
+    git config user.email 'danilo.pianini@gmail.com' || exit 11
+    git add README.md docs/ || exit 12
+    git commit -m "docs: update documentation" || exit 13
+    git pull --rebase || exit 14
+    git push || exit 15
+fi
 ./gradlew -PstagingRepositoryId=\${process.env.STAGING_REPO_ID} releaseStagingRepositoryOnMavenCentral || exit 3
 ./gradlew publishJsPackageToNpmjsRegistry || exit 4
 `
