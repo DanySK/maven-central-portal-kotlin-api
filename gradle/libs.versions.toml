@@ -1,6 +1,6 @@
 [versions]
-kotlin = "1.8.22"
-ktor = "2.3.13"
+kotlin = "2.0.21"
+ktor = "3.0.1"
 
 [libraries]
 ktor-client-cio-jvm = { module = "io.ktor:ktor-client-cio-jvm", version.ref = "ktor" }
@@ -11,8 +11,9 @@ ktor-client-js = { module = "io.ktor:ktor-client-js", version.ref = "ktor" }
 ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", version.ref = "ktor" }
 ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
-kotlinx-coroutines-core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3"
-kotlinx-serialization-core = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.5.1"
+kotlinx-coroutines-core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0"
+kotlinx-datetime = "org.jetbrains.kotlinx:kotlinx-datetime:0.4.1"
+kotlinx-serialization-core = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.7.3"
 
 [bundles]
 ktor-client = [ "ktor-client-core", "ktor-client-serialization", "ktor-client-content-negotiation", "ktor-serialization-kotlinx-json" ]
@@ -22,7 +23,7 @@ dokka = "org.jetbrains.dokka:1.9.20"
 gitSemVer = "org.danilopianini.git-sensitive-semantic-versioning-gradle-plugin:3.1.7"
 kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
-npm-publish = "dev.petuska.npm.publish:3.3.1"
-openapi-generator = "org.openapi.generator:7.1.0"
+npm-publish = "dev.petuska.npm.publish:3.4.3"
+openapi-generator = "org.openapi.generator:7.10.0"
 publishOnCentral = "org.danilopianini.publish-on-central:5.0.0"
 taskTree = "com.dorongold.task-tree:4.0.0"

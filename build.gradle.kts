@@ -1,5 +1,6 @@
 import org.danilopianini.gradle.mavencentral.JavadocJar
 import org.gradle.internal.os.OperatingSystem
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 
 plugins {
@@ -28,6 +29,7 @@ openApiGenerate {
     library = "multiplatform"
     groupId = project.group.toString()
     id = project.name
+    configOptions.put("dateLibrary", "kotlinx-datetime")
 }
 
 val openApiOutputDir = tasks.openApiGenerate.flatMap { it.outputDir }
@@ -47,17 +49,6 @@ tasks.openApiGenerate.configure {
     finalizedBy(copyDocs)
 }
 
-//listOf(
-//    KotlinCompileCommon::class,
-//    MetadataDependencyTransformationTask::class,
-//    Kotlin2JsCompile::class,
-//    KotlinNativeCompile::class,
-//).forEach {
-//    tasks.withType(it).configureEach {
-//        dependsOn(copyReadme)
-//    }
-//}
-
 kotlin {
     jvmToolchain(8)
 
@@ -65,13 +56,13 @@ kotlin {
         testRuns["test"].executionTask.configure {
             useJUnitPlatform()
         }
-//        compilations.all {
-//            compileTaskProvider.configure {
-//                compilerOptions {
-//                    jvmTarget = JvmTarget.JVM_1_8
-//                }
-//            }
-//        }
+        compilations.all {
+            compileTaskProvider.configure {
+                compilerOptions {
+                    jvmTarget = JvmTarget.JVM_1_8
+                }
+            }
+        }
     }
 
     js(IR) {
@@ -80,6 +71,7 @@ kotlin {
         binaries.library()
     }
 
+//    @OptIn(ExperimentalWasmDsl::class)
 //    wasmJs {
 //        browser()
 //        nodejs()
@@ -94,32 +86,28 @@ kotlin {
         }
     }
 
-//    applyDefaultHierarchyTemplate()
+    applyDefaultHierarchyTemplate()
     /*
      * Linux 64
      */
-//    linuxX64(nativeSetup)
-//    linuxArm64(nativeSetup)
+    linuxX64(nativeSetup)
+    linuxArm64(nativeSetup)
     /*
      * Win 64
      */
-//    mingwX64(nativeSetup)
+    mingwX64(nativeSetup)
     /*
      * Apple OSs
      */
-    ios()
-//    ios {
-//        binaries { framework { freeCompilerArgs += "-Xobjc-generics" } }
-//    }
-//    macosX64(nativeSetup)
-//    macosArm64(nativeSetup)
-//    iosArm64(nativeSetup)
-//    iosSimulatorArm64(nativeSetup)
-//    watchosArm32(nativeSetup)
-//    watchosArm64(nativeSetup)
-//    watchosSimulatorArm64(nativeSetup)
-//    tvosArm64(nativeSetup)
-//    tvosSimulatorArm64(nativeSetup)
+    macosX64(nativeSetup)
+    macosArm64(nativeSetup)
+    iosArm64(nativeSetup)
+    iosSimulatorArm64(nativeSetup)
+    watchosArm32(nativeSetup)
+    watchosArm64(nativeSetup)
+    watchosSimulatorArm64(nativeSetup)
+    tvosArm64(nativeSetup)
+    tvosSimulatorArm64(nativeSetup)
 
     sourceSets.configureEach {
         kotlin.srcDir(openApiOutputDir.map { "$it/src/$name" })
@@ -128,6 +116,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
+                api(libs.kotlinx.datetime)
                 api(libs.bundles.ktor.client)
                 implementation(libs.kotlinx.coroutines.core)
                 implementation(libs.kotlinx.serialization.core)
@@ -147,7 +136,7 @@ kotlin {
         }
         val jvmTest by getting {
             dependencies {
-                implementation(kotlin("test-junit5"))
+                implementation(kotlin("test-junit"))
             }
         }
         val jsMain by getting {
@@ -158,6 +147,11 @@ kotlin {
         val iosMain by getting {
             dependencies {
                 api(libs.ktor.client.ios)
+            }
+        }
+        all {
+            languageSettings.apply {
+                optIn("kotlin.Experimental")
             }
         }
     }
@@ -173,8 +167,7 @@ kotlin {
     configure(excludeTargets) {
         compilations.configureEach {
             cinterops.configureEach { tasks[interopProcessingTaskName].enabled = false }
-            compileKotlinTaskProvider.configure { enabled = false }
-//            compileTaskProvider.get().enabled = false
+            compileTaskProvider.get().enabled = false
             tasks[processResourcesTaskName].enabled = false
         }
         binaries.configureEach { linkTaskProvider.configure { enabled = false } }
@@ -189,6 +182,21 @@ kotlin {
         }
     }
 }
+
+val iosTest by tasks.registering(Exec::class) {
+    val device = project.findProperty("device")?.toString() ?: "iPhone 8"
+    dependsOn("linkDebugTestIosX64")
+    group = JavaBasePlugin.VERIFICATION_GROUP
+    description = "Execute unit tests on ${device} simulator"
+    doFirst {
+        val binary = kotlin.targets.getByName<KotlinNativeTarget>("iosX64").binaries.getTest("DEBUG")
+        commandLine("xcrun", "simctl", "spawn", device, binary.outputFile)
+    }
+}
+tasks.register("test") {
+    dependsOn("allTests")
+}
+
 
 tasks.dokkaJavadoc {
     enabled = false
