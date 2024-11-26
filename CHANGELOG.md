@@ -1,3 +1,23 @@
+## [2.0.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.2.3...2.0.0) (2024-11-26)
+
+### ⚠ BREAKING CHANGES
+
+* update all libraries and enable all targets but WASM
+
+### Features
+
+* update all libraries and enable all targets but WASM ([9a86cc6](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/9a86cc6d9b1ba68151acadeecf805ec9f1c7c3cc))
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlinx:kotlinx-datetime to v0.6.1 ([#39](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/39)) ([8cb0ffd](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/8cb0ffdb267839417faf07642d84595b5821fd5f))
+* **core-deps:** update Xcode to 15.2.0 ([#30](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/30)) ([3c02c80](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/3c02c80e8d0353e2646e31dde7a49c0d8490da63))
+
+### Build and continuous integration
+
+* **deps:** update dependency macos github actions runner to v14 ([#37](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/37)) ([3a8d78a](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/3a8d78aa98a64f32b35348abcacb5520478d43a5))
+* **release:** auto-update docs on releases ([f1fb631](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/f1fb6314540e0b3ffdef15a2eebc87e6401eca03))
+
 ## [1.2.3](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.2.2...1.2.3) (2024-11-26)
 
 ### Dependency updates
