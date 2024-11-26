@@ -1,3 +1,17 @@
+## [1.0.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.0.1...1.0.2) (2024-11-26)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlinx:kotlinx-coroutines-core to v1.7.3 ([#8](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/8)) ([e9eefdc](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e9eefdc9ea37a7362624a56b6268fb427ec0d450))
+* **deps:** update plugin npm-publish to v3.2.1 ([#6](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/6)) ([493e976](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/493e97695fc7662fb679431495e0ff576291bdb7))
+* **deps:** update plugin npm-publish to v3.3.1 ([2ea0222](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/2ea022287a743340099123511dea621f75dd5297))
+
+### Build and continuous integration
+
+* **renovate:** mark `org.openapi.generator` as `api-deps` ([38ddd92](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/38ddd925f3eca25ce985a5931eee80b210fe34ce))
+* **renovate:** mark ktor updates as api-deps ([d5268ad](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/d5268ad1502a273c77594210a17dd253c7dfa76a))
+* **renovate:** retry to match `org.openapi.generator` ([133e6ce](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/133e6ce007c6106404aed77d91ab130d9f819c5a))
+
 ## [1.0.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.0.0...1.0.1) (2024-11-25)
 
 ### Dependency updates
