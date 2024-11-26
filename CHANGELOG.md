@@ -1,3 +1,9 @@
+## [1.1.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.0.2...1.1.0) (2024-11-26)
+
+### Dependency updates
+
+* **api-deps:** update plugin openapi-generator to v7.1.0 ([#21](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/21)) ([ccc14b5](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/ccc14b56cb67752fac32a116916f9e5bb2f93d87))
+
 ## [1.0.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.0.1...1.0.2) (2024-11-26)
 
 ### Dependency updates
