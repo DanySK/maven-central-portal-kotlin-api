@@ -7,7 +7,8 @@
     {
       "description": "Trigger a minor update on the generator updates",
       "matchPackageNames": [
-        "/^org\\.openapi\\.generator.*/"
+        "/^org\\.openapi\\.generator.*/",
+        "/^io\\.ktor:ktor.*/",
       ],
       "semanticCommitScope": "api-deps"
     }
