@@ -1,3 +1,9 @@
+## [1.2.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.2.0...1.2.1) (2024-11-26)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlinx:kotlinx-serialization-core to v1.4.1 ([#11](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/11)) ([6dcaad9](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/6dcaad9e02d7179cd8666f3fd92c459956beb88b))
+
 ## [1.2.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.1.0...1.2.0) (2024-11-26)
 
 ### Dependency updates
