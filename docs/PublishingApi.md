@@ -2,12 +2,12 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiV1PublisherDeploymentDeploymentIdDelete**](PublishingApi.md#apiV1PublisherDeploymentDeploymentIdDelete) | **DELETE** /api/v1/publisher/deployment/{deploymentId} | 
-[**apiV1PublisherDeploymentDeploymentIdPost**](PublishingApi.md#apiV1PublisherDeploymentDeploymentIdPost) | **POST** /api/v1/publisher/deployment/{deploymentId} | 
-[**apiV1PublisherStatusPost**](PublishingApi.md#apiV1PublisherStatusPost) | **POST** /api/v1/publisher/status | 
-[**apiV1PublisherUploadPost**](PublishingApi.md#apiV1PublisherUploadPost) | **POST** /api/v1/publisher/upload | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**apiV1PublisherDeploymentDeploymentIdDelete**](PublishingApi.md#apiV1PublisherDeploymentDeploymentIdDelete) | **DELETE** /api/v1/publisher/deployment/{deploymentId} |  |
+| [**apiV1PublisherDeploymentDeploymentIdPost**](PublishingApi.md#apiV1PublisherDeploymentDeploymentIdPost) | **POST** /api/v1/publisher/deployment/{deploymentId} |  |
+| [**apiV1PublisherStatusPost**](PublishingApi.md#apiV1PublisherStatusPost) | **POST** /api/v1/publisher/status |  |
+| [**apiV1PublisherUploadPost**](PublishingApi.md#apiV1PublisherUploadPost) | **POST** /api/v1/publisher/upload |  |
 
 
 <a id="apiV1PublisherDeploymentDeploymentIdDelete"></a>
@@ -38,10 +38,9 @@ try {
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **deploymentId** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **deploymentId** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. | |
 
 ### Return type
 
@@ -89,10 +88,9 @@ try {
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **deploymentId** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **deploymentId** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. | |
 
 ### Return type
 
@@ -141,10 +139,9 @@ try {
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **id** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **id** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. | |
 
 ### Return type
 
@@ -195,12 +192,11 @@ try {
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **kotlin.String**| Deployment/bundle name, optional (will use attached file name if not present). | [optional]
- **publishingType** | **kotlin.String**| Whether to have the deployment stop in the &#x60;VALIDATED&#x60; state and require a user to log in and manually approve its progression, or to automatically go directly to &#x60;PUBLISHING&#x60; when validation has passed. | [optional] [enum: USER_MANAGED, AUTOMATIC]
- **bundle** | **io.ktor.client.request.forms.InputProvider**|  | [optional]
+| **name** | **kotlin.String**| Deployment/bundle name, optional (will use attached file name if not present). | [optional] |
+| **publishingType** | **kotlin.String**| Whether to have the deployment stop in the &#x60;VALIDATED&#x60; state and require a user to log in and manually approve its progression, or to automatically go directly to &#x60;PUBLISHING&#x60; when validation has passed. | [optional] [enum: USER_MANAGED, AUTOMATIC] |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **bundle** | **io.ktor.client.request.forms.InputProvider**|  | [optional] |
 
 ### Return type
 

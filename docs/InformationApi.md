@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiV1PublisherDeploymentsFilesPost**](InformationApi.md#apiV1PublisherDeploymentsFilesPost) | **POST** /api/v1/publisher/deployments/files | 
-[**apiV1PublisherPublishedGet**](InformationApi.md#apiV1PublisherPublishedGet) | **GET** /api/v1/publisher/published | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**apiV1PublisherDeploymentsFilesPost**](InformationApi.md#apiV1PublisherDeploymentsFilesPost) | **POST** /api/v1/publisher/deployments/files |  |
+| [**apiV1PublisherPublishedGet**](InformationApi.md#apiV1PublisherPublishedGet) | **GET** /api/v1/publisher/published |  |
 
 
 <a id="apiV1PublisherDeploymentsFilesPost"></a>
@@ -37,10 +37,9 @@ try {
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **apiV1PublisherDeploymentsFilesPostRequest** | [**ApiV1PublisherDeploymentsFilesPostRequest**](ApiV1PublisherDeploymentsFilesPostRequest.md)| Request body containing the necessary parameters. |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **apiV1PublisherDeploymentsFilesPostRequest** | [**ApiV1PublisherDeploymentsFilesPostRequest**](ApiV1PublisherDeploymentsFilesPostRequest.md)| Request body containing the necessary parameters. | |
 
 ### Return type
 
@@ -91,12 +90,11 @@ try {
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **namespace** | **kotlin.String**| namespace of component |
- **name** | **kotlin.String**| name of component |
- **version** | **kotlin.String**| version of component |
+| **namespace** | **kotlin.String**| namespace of component | |
+| **name** | **kotlin.String**| name of component | |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **version** | **kotlin.String**| version of component | |
 
 ### Return type
 

@@ -2,10 +2,10 @@
 
 All URIs are relative to *http://localhost*
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**apiV1PublisherDeploymentDeploymentIdDownloadRelativePathGet**](IntegrationApi.md#apiV1PublisherDeploymentDeploymentIdDownloadRelativePathGet) | **GET** /api/v1/publisher/deployment/{deploymentId}/download/{relativePath} | 
-[**apiV1PublisherDeploymentsDownloadRelativePathGet**](IntegrationApi.md#apiV1PublisherDeploymentsDownloadRelativePathGet) | **GET** /api/v1/publisher/deployments/download/{relativePath} | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**apiV1PublisherDeploymentDeploymentIdDownloadRelativePathGet**](IntegrationApi.md#apiV1PublisherDeploymentDeploymentIdDownloadRelativePathGet) | **GET** /api/v1/publisher/deployment/{deploymentId}/download/{relativePath} |  |
+| [**apiV1PublisherDeploymentsDownloadRelativePathGet**](IntegrationApi.md#apiV1PublisherDeploymentsDownloadRelativePathGet) | **GET** /api/v1/publisher/deployments/download/{relativePath} |  |
 
 
 <a id="apiV1PublisherDeploymentDeploymentIdDownloadRelativePathGet"></a>
@@ -38,11 +38,10 @@ try {
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **deploymentId** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. |
- **relativePath** | **kotlin.String**| The full path to a specific file from a deployment bundle. |
+| **deploymentId** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. | |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **relativePath** | **kotlin.String**| The full path to a specific file from a deployment bundle. | |
 
 ### Return type
 
@@ -91,10 +90,9 @@ try {
 ```
 
 ### Parameters
-
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **relativePath** | **kotlin.String**| The full path to a specific file from a deployment bundle. |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **relativePath** | **kotlin.String**| The full path to a specific file from a deployment bundle. | |
 
 ### Return type
 
