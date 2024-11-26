@@ -12,7 +12,7 @@ ktor-client-serialization = { module = "io.ktor:ktor-client-serialization", vers
 ktor-client-mock = { module = "io.ktor:ktor-client-mock", version.ref = "ktor" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 kotlinx-coroutines-core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3"
-kotlinx-serialization-core = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.4.1"
+kotlinx-serialization-core = "org.jetbrains.kotlinx:kotlinx-serialization-core:1.5.1"
 
 [bundles]
 ktor-client = [ "ktor-client-core", "ktor-client-serialization", "ktor-client-content-negotiation", "ktor-serialization-kotlinx-json" ]
