@@ -2,5 +2,14 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "github>DanySK/renovate-config:kotlin"
+  ],
+  "packageRules": [
+    {
+      "description": "Trigger a minor update on the generator updates",
+      "matchPackageNames": [
+        "org.openapi.generator"
+      ],
+      "semanticCommitScope": "api-deps"
+    }
   ]
 }
