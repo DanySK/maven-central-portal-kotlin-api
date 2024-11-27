@@ -1,3 +1,21 @@
+## [2.1.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.0.0...2.1.0) (2024-11-27)
+
+### Features
+
+* enable wasmJs ([#41](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/41)) ([91eb714](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/91eb71465543227d127c2d035e49a22496fc826b))
+
+### Dependency updates
+
+* **deps:** update plugin publishoncentral to v5.1.11 ([#33](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/33)) ([4008aa9](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/4008aa94d6e8b491632e9115d9de3ca86731ac02))
+
+### Bug Fixes
+
+* explicitly require ktor-io as part of the API ([557aa7e](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/557aa7ec4a6df8876bef1df60b92a649d0f47fec))
+
+### Documentation
+
+* update documentation ([f5df9d6](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/f5df9d64b5cb30579b11d22f7e8b32af2bd2d97b))
+
 ## [2.0.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/1.2.3...2.0.0) (2024-11-26)
 
 ### ⚠ BREAKING CHANGES
