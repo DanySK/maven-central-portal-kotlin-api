@@ -61,8 +61,6 @@ val fixFormData by tasks.registering {
         check(file.exists()) { "File ${file.absolutePath} does not exist" }
         val content = file.readText()
         check(regex.containsMatchIn(content)) { "Regex does not match" }
-        println("Regex matches")
-        println(regex.find(content)?.groupValues)
         val newContent = regex.replace(content) { matchResult ->
             val (_, indent) = matchResult.groupValues
             """
