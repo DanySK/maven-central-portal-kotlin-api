@@ -588,6 +588,19 @@
                                         "format": "binary"
                                     }
                                 }
+                            },
+                            "encoding": {
+                                "bundle": {
+                                    "contentType": "application/octet-stream",
+                                    "headers": {
+                                        "Content-Disposition": {
+                                            "schema": {
+                                                "type": "string",
+                                                "example": "form-data; name=\"bundle\"; filename=\"file-name.zip\""
+                                            }
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
