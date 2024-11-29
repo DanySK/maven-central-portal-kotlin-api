@@ -1,3 +1,15 @@
+## [2.1.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.1.1...2.1.2) (2024-11-29)
+
+### Bug Fixes
+
+* add the encoding description and example to the upload api ([5d55eb9](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/5d55eb9649aa924fdb4813e67aff4db2a5d0c6b5))
+* auto-patch `formData` to correctly inject `filename` into the list of `Content-Disposition` ([c108919](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/c1089199a55adb3502552a369678da384143c983))
+
+### Build and continuous integration
+
+* explicitly make Jar tasks depend on source patching ([68ed738](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/68ed738099ede5facdc23aa61c1e862a35699fec))
+* remove debug print ([740abc5](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/740abc5b875af4eca6736a874c95bd76affd7596))
+
 ## [2.1.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.1.0...2.1.1) (2024-11-27)
 
 ### Dependency updates
