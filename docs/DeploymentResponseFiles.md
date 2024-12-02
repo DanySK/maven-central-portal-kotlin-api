@@ -17,7 +17,7 @@
 ## Enum: deploymentState
 | Name | Value |
 | ---- | ----- |
-| deploymentState | PENDING, VALIDATING, PUBLISHING, PUBLISHED, FAILED |
+| deploymentState | PENDING, VALIDATING, VALIDATED, PUBLISHING, PUBLISHED, FAILED |
 
 
 <a id="DeploymentType"></a>
