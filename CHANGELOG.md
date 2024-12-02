@@ -1,3 +1,9 @@
+## [2.2.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.1.2...2.2.0) (2024-12-02)
+
+### Features
+
+* add the `VALIDATED` state ([1d6197e](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/1d6197ef87cae41c1ae851826700020c8d4db1f7))
+
 ## [2.1.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.1.1...2.1.2) (2024-11-29)
 
 ### Bug Fixes
