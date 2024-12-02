@@ -1,3 +1,9 @@
+## [2.2.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.2.0...2.2.1) (2024-12-02)
+
+### Documentation
+
+* update documentation ([2eb9dfe](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/2eb9dfe533530f42edf3f300368fb33593ae715b))
+
 ## [2.2.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.1.2...2.2.0) (2024-12-02)
 
 ### Features
