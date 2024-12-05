@@ -1,3 +1,12 @@
+## [2.3.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.2.1...2.3.0) (2024-12-05)
+
+### Dependency updates
+
+* **api-deps:** update ktor monorepo to v3.0.2 ([#45](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/45)) ([eac5a64](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/eac5a64c8b871dd88a963d162c9a19872816f7bd))
+* **deps:** update node.js to 22.12 ([#46](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/46)) ([0a952d1](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/0a952d1e3231449c4c3932e8264390ae8a24b8e9))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v0.9.0 ([#43](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/43)) ([7636b15](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/7636b151391e67d7952c1df6bb1e39ba8f9619e6))
+* **deps:** update plugin publishoncentral to v6 ([#44](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/44)) ([13a602b](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/13a602b47bf54b27fa76a84a3be5f004f1ea368b))
+
 ## [2.2.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.2.0...2.2.1) (2024-12-02)
 
 ### Documentation
