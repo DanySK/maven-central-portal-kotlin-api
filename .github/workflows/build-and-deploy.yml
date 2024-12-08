@@ -123,7 +123,7 @@ jobs:
           deploy-command: |
             ./gradlew -PstagingRepositoryId=${{ needs.staging-repo.outputs.maven-central-repo-id }} close --parallel
             if [[ "${{ needs.staging-repo.outputs.will-release }}" == "false" ]]; then
-              ./gradlew -PstagingRepositoryId=${{ needs.staging-repo.outputs.maven-central-repo-id }} drop
+              ./gradlew -PstagingRepositoryId=${{ needs.staging-repo.outputs.maven-central-repo-id }} dropStagingRepositoryOnMavenCentral
             fi
 
   release:
