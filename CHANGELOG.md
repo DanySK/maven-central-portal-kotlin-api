@@ -1,3 +1,23 @@
+## [2.3.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.3.0...2.3.1) (2024-12-16)
+
+### Dependency updates
+
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.116 ([#50](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/50)) ([7f34c62](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/7f34c62c5df742c71db4ddfdd227e74ac48648d7))
+* **deps:** update plugin com.gradle.develocity to v3.19 ([#53](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/53)) ([d4e55e3](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/d4e55e3a73740b59122a18884b54688673bd8bb0))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.16 ([#52](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/52)) ([261b1f1](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/261b1f19e46d50f119bd32c28315f30bbfb16d42))
+* **deps:** update plugin publishoncentral to v6.0.1 ([#49](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/49)) ([f01cb37](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/f01cb3722f56e3f475ac195f1f366968699645ca))
+* **deps:** update plugin publishoncentral to v7 ([#51](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/51)) ([cb8ba87](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/cb8ba879e6d5ff23828f1d888bb4ff73924b657d))
+
+### Documentation
+
+* **deps:** update plugin dokka to v2 ([#54](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/54)) ([739f684](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/739f6841ee1b6192aec9c99dd71f7620b0b9cf6c))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.24 ([#47](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/47)) ([55d2743](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/55d2743b1e56ed99e8263c60bf49f7c23f905f5b))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.5.25 ([#48](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/48)) ([3f21c1c](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/3f21c1c50ba6e39a7b03ad523e4f96299d90618d))
+* disambiguate the drop task name ([f89ac37](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/f89ac37502e2713be2848372e7d1db82b3dcd742))
+
 ## [2.3.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.2.1...2.3.0) (2024-12-05)
 
 ### Dependency updates
