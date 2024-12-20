@@ -1,3 +1,10 @@
+## [2.4.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.4.0...2.4.1) (2024-12-20)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlinx:kotlinx-coroutines-core to v1.10.1 ([#64](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/64)) ([a8051a9](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/a8051a97859513f1575898453cb2e7cb26ac80c6))
+* **deps:** update plugin publishoncentral to v7.0.3 ([#63](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/63)) ([3395c65](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/3395c65b3fb11e0329434f88cebcbca58625a820))
+
 ## [2.4.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.3.1...2.4.0) (2024-12-19)
 
 ### Dependency updates
