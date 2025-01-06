@@ -1,3 +1,15 @@
+## [2.4.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.4.1...2.4.2) (2025-01-06)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlinx:kotlinx-serialization-core to v1.8.0 ([#71](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/71)) ([fb32c21](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/fb32c219263835a00d874471f8b2aa04cdfa8e61))
+* **deps:** update dependency gradle to v8.12 ([#65](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/65)) ([968289c](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/968289ce72807c01e6f581f90eb89e11149ddcad))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.117 ([#68](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/68)) ([e3fa614](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e3fa614ecf987381086790d100bf0101b6b505f0))
+* **deps:** update plugin npm-publish to v3.5.0 ([#69](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/69)) ([d47ac7c](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/d47ac7c793148046b30d841cf8b7e96ebdc2f1f9))
+* **deps:** update plugin npm-publish to v3.5.1 ([#70](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/70)) ([9469ee7](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/9469ee7385fa9e2cf2a7040040ceb0b5a0851a03))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.18 ([#67](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/67)) ([35f8bde](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/35f8bde91b7ae388ca89e568b4ac418e4d7afb4b))
+* **deps:** update plugin publishoncentral to v7.0.4 ([#66](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/66)) ([8e77545](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/8e77545d4027d3175d43b4feb05c8872e00859bb))
+
 ## [2.4.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.4.0...2.4.1) (2024-12-20)
 
 ### Dependency updates
