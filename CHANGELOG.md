@@ -1,3 +1,18 @@
+## [2.5.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.4.2...2.5.0) (2025-01-20)
+
+### Dependency updates
+
+* **api-deps:** update plugin openapi-generator to v7.11.0 ([#79](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/79)) ([60f7e61](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/60f7e6107ae69001b9cba1f84f6e7066cf41d84e))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.118 ([#74](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/74)) ([4bb1d9f](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/4bb1d9f1037f007a315654e98d8c986d432bca46))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.119 ([#77](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/77)) ([49c9184](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/49c91841792e30a52e51bba29568f332bd31159f))
+* **deps:** update node.js to 22.13 ([#72](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/72)) ([aa7012a](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/aa7012afeb2b8d40d9626989bf4293086b415844))
+* **deps:** update plugin npm-publish to v3.5.2 ([#78](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/78)) ([abcf6e3](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/abcf6e3030843a74a6240bb0c27e00c5c5466ed8))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.6.0 ([#75](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/75)) ([23f0a27](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/23f0a270ecbb19e410811928c7adc6b8d84daa42))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.0 ([#76](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/76)) ([475b5c4](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/475b5c469996c3a3fc9d8cb53450cbaa7d0aa227))
+
 ## [2.4.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.4.1...2.4.2) (2025-01-06)
 
 ### Dependency updates
