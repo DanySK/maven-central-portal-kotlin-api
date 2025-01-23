@@ -1,3 +1,13 @@
+## [2.5.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.5.0...2.5.1) (2025-01-23)
+
+### Documentation
+
+* update documentation ([ad1a278](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/ad1a2782c1c863344507835a8e0304909ca1e9ae))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.1 ([#80](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/80)) ([87158ff](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/87158ffe4a3e5c0ddcf5f99525af0266808b44a7))
+
 ## [2.5.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.4.2...2.5.0) (2025-01-20)
 
 ### Dependency updates
