@@ -1,3 +1,18 @@
+## [2.5.3](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.5.2...2.5.3) (2025-02-10)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlinx:kotlinx-datetime to v0.6.2 ([#103](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/103)) ([e84252d](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e84252d41e022960fb4050a4e902b8e0d960a089))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.120 ([#100](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/100)) ([8e5b3f0](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/8e5b3f076faaac26cb343bd685b9290bec194db6))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.121 ([#101](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/101)) ([a2ebb2a](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/a2ebb2a734179a290884f973b7070dfe209f9b44))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.122 ([#102](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/102)) ([729be61](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/729be61f8d01c25b1792c3f470fcc6eb6bcb7930))
+* **deps:** update plugin publishoncentral to v8.0.3 ([#99](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/99)) ([0258644](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/0258644dd7ed8efa98e8d90dabd3283afc1b0400))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.7 ([#97](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/97)) ([1cbbb10](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/1cbbb10b9d69d7173671db2ffcb993c40ad78aa7))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.8 ([#98](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/98)) ([082b36c](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/082b36c95b995ecd9f2621a8eb08e17854c8cacc))
+
 ## [2.5.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.5.1...2.5.2) (2025-01-27)
 
 ### Dependency updates
