@@ -1,3 +1,10 @@
+## [2.6.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.5.3...2.6.0) (2025-02-14)
+
+### Dependency updates
+
+* **api-deps:** update ktor monorepo to v3.1.0 ([#104](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/104)) ([dc6105d](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/dc6105d324b1d5d7d51e9288a272d4a3888aa199))
+* **deps:** update node.js to 22.14 ([#105](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/105)) ([4d6f0df](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/4d6f0dfc8044c98e2ee1daa7b8ebd5422c493261))
+
 ## [2.5.3](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.5.2...2.5.3) (2025-02-10)
 
 ### Dependency updates
