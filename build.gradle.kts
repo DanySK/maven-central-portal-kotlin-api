@@ -109,6 +109,10 @@ kotlin {
         }
     }
 
+    wasmWasi {
+        binaries.library()
+    }
+
     js(IR) {
         browser()
         nodejs()
