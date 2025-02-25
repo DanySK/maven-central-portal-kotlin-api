@@ -1,3 +1,20 @@
+## [2.7.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.6.0...2.7.0) (2025-02-25)
+
+### Dependency updates
+
+* **api-deps:** update ktor monorepo to v3.1.1 ([#113](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/113)) ([940df4b](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/940df4bc1257d4e9bea145e4f0ed5a627b2b7164))
+* **deps:** update dependency gradle to v8.13 ([#114](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/114)) ([fd5c45e](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/fd5c45e2aeb3b850dff731b21a34ea1e81214aa9))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.123 ([#106](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/106)) ([e35693a](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e35693abfa84db57a6edc3f7dfe24a67f8eed221))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.124 ([#107](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/107)) ([6d22365](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/6d2236546287b4e6a8a9d177ece108af9e9711c5))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.125 ([#112](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/112)) ([bd5d32f](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/bd5d32f389bf058df2989ccc4dc3be05b6ec49c1))
+* **deps:** update plugin com.gradle.develocity to v3.19.2 ([#109](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/109)) ([4ebcd3a](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/4ebcd3a37fe4bd989cdcdc7696e027b94d87117b))
+* **deps:** update plugin npm-publish to v3.5.3 ([#110](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/110)) ([f3d6716](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/f3d67162da8e2ae23220f62aa0aed25c23725464))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.10 ([#111](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/111)) ([22f09a8](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/22f09a8a5a0fa8f1f0f263b6c8d4129065eecf87))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.9 ([#108](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/108)) ([4655537](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/4655537ac301369fa2154d8ba92245ff78675843))
+
 ## [2.6.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.5.3...2.6.0) (2025-02-14)
 
 ### Dependency updates
