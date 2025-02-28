@@ -1,3 +1,15 @@
+## [2.8.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.7.0...2.8.0) (2025-02-28)
+
+### Dependency updates
+
+* **api-deps:** update plugin openapi-generator to v7.12.0 ([#118](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/118)) ([342ff07](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/342ff07c2c9872de1be6c88928902c5531bf22ff))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.21 ([#115](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/115)) ([a5fb04e](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/a5fb04ed7731b446abf784b05ed5e3757c0d3486))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.11 ([#116](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/116)) ([5cfd81e](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/5cfd81e777715fbb9c27829036f730be374fd603))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.12 ([#117](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/117)) ([5f6dc28](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/5f6dc28e88ec7e063bc352e3a95274133de5b437))
+
 ## [2.7.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.6.0...2.7.0) (2025-02-25)
 
 ### Dependency updates
