@@ -1,3 +1,13 @@
+## [2.8.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.8.0...2.8.1) (2025-03-01)
+
+### Dependency updates
+
+* **deps:** update plugin publishoncentral to v8.0.4 ([#119](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/119)) ([48b20f5](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/48b20f521eeb97ade4ec86db933a8ff81ddf4aa7))
+
+### Documentation
+
+* update documentation ([a337e6a](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/a337e6a519d2f1a8b7f78496394235fddb51b6f3))
+
 ## [2.8.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.7.0...2.8.0) (2025-02-28)
 
 ### Dependency updates
