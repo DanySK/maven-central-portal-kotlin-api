@@ -32,5 +32,5 @@ kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref 
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
 npm-publish = "org.danilopianini.npm.publish:4.0.1"
 openapi-generator = "org.openapi.generator:7.12.0"
-publishOnCentral = "org.danilopianini.publish-on-central:8.0.5"
+publishOnCentral = "org.danilopianini.publish-on-central:8.0.6"
 taskTree = "com.dorongold.task-tree:4.0.1"
