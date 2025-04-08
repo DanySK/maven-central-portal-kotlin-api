@@ -1,3 +1,12 @@
+## [2.9.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.8.2...2.9.0) (2025-04-08)
+
+### Dependency updates
+
+* **api-deps:** update ktor monorepo to v3.1.2 ([#127](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/127)) ([6fcd2ba](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/6fcd2ba5438a1925c5254a41c02463aa235eb504))
+* **core-deps:** update dependency org.jetbrains.kotlinx:kotlinx-coroutines-core to v1.10.2 ([#129](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/129)) ([7c6b30d](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/7c6b30d586555efc3b6ecd69877dadea7669313a))
+* **core-deps:** update dependency org.jetbrains.kotlinx:kotlinx-serialization-core to v1.8.1 ([#128](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/128)) ([0b87e4c](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/0b87e4cbc08341120dcebd09e428a166381dc7f9))
+* **deps:** update plugin publishoncentral to v8.0.6 ([#130](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/130)) ([552d3c9](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/552d3c929e24dae87ee421417c6335759b6ebbad))
+
 ## [2.8.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.8.1...2.8.2) (2025-04-01)
 
 ### Dependency updates
