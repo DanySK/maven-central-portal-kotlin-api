@@ -44,7 +44,7 @@ jobs:
         uses: nicolasfara/precompute-semantic-release-version-action@2.0.2
         with:
           github-token: ${{ github.token }}
-      - uses: DanySK/build-check-deploy-gradle-action@3.7.16
+      - uses: DanySK/build-check-deploy-gradle-action@3.7.17
         with:
           maven-central-username: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
@@ -87,7 +87,7 @@ jobs:
         uses: maxim-lobanov/setup-xcode@v1.6.0
         with:
           xcode-version: '15.2.0'
-      - uses: DanySK/build-check-deploy-gradle-action@3.7.16
+      - uses: DanySK/build-check-deploy-gradle-action@3.7.17
         with:
           deploy-command: |
             # Stop gradle on windows
@@ -112,7 +112,7 @@ jobs:
     steps:
       - name: Checkout the repo
         uses: actions/checkout@v4.2.2
-      - uses: DanySK/build-check-deploy-gradle-action@3.7.16
+      - uses: DanySK/build-check-deploy-gradle-action@3.7.17
         with:
           maven-central-username: ${{ secrets.MAVEN_CENTRAL_USERNAME }}
           maven-central-password: ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
@@ -148,7 +148,7 @@ jobs:
         uses: actions/setup-node@v4.4.0
         with:
           node-version-file: package.json
-      - uses: DanySK/build-check-deploy-gradle-action@3.7.16
+      - uses: DanySK/build-check-deploy-gradle-action@3.7.17
         env:
           STAGING_REPO_ID: ${{ needs.staging-repo.outputs.maven-central-repo-id }}
         with:
