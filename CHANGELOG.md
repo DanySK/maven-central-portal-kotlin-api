@@ -1,3 +1,9 @@
+## [2.10.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.10.0...2.10.1) (2025-05-13)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.1.21 ([#151](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/151)) ([4896341](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/4896341d2a9caa1da0a7546f63ba9cda9caacfd8))
+
 ## [2.10.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.9.0...2.10.0) (2025-05-05)
 
 ### Dependency updates
