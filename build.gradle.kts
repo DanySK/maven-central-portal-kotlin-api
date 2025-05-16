@@ -58,6 +58,10 @@ tasks.openApiGenerate.configure {
     finalizedBy(copyDocs)
 }
 
+tasks.withType<AnyJar>().configureEach {
+    dependsOn(tasks.openApiGenerate)
+}
+
 tasks.compileKotlinMetadata.configure { dependsOn(tasks.openApiGenerate) }
 
 tasks.withType<KotlinCompilationTask<*>>().configureEach {
@@ -134,9 +138,9 @@ kotlin {
             }
         }
         val commonTest by getting {
-            kotlin.srcDir("$openApiOutputDir/src/test/kotlin")
             dependencies {
                 implementation(libs.ktor.client.mock)
+                implementation(kotlin("test"))
             }
         }
         val jvmMain by getting {
