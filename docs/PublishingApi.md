@@ -178,7 +178,7 @@ Upload a deployment bundle intended to be published to Maven Central.
 val apiInstance = PublishingApi()
 val name : kotlin.String = name_example // kotlin.String | Deployment/bundle name, optional (will use attached file name if not present).
 val publishingType : kotlin.String = publishingType_example // kotlin.String | Whether to have the deployment stop in the `VALIDATED` state and require a user to log in and manually approve its progression, or to automatically go directly to `PUBLISHING` when validation has passed.
-val bundle : io.ktor.client.request.forms.InputProvider = BINARY_DATA_HERE // io.ktor.client.request.forms.InputProvider | 
+val bundle : io.ktor.client.request.forms.FormPart<io.ktor.client.request.forms.InputProvider> = BINARY_DATA_HERE // io.ktor.client.request.forms.FormPart<io.ktor.client.request.forms.InputProvider> | 
 try {
     val result : kotlin.String = apiInstance.apiV1PublisherUploadPost(name, publishingType, bundle)
     println(result)
@@ -196,7 +196,7 @@ try {
 | **publishingType** | **kotlin.String**| Whether to have the deployment stop in the &#x60;VALIDATED&#x60; state and require a user to log in and manually approve its progression, or to automatically go directly to &#x60;PUBLISHING&#x60; when validation has passed. | [optional] [enum: USER_MANAGED, AUTOMATIC] |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **bundle** | **io.ktor.client.request.forms.InputProvider**|  | [optional] |
+| **bundle** | **io.ktor.client.request.forms.FormPart&lt;io.ktor.client.request.forms.InputProvider&gt;**|  | [optional] |
 
 ### Return type
 

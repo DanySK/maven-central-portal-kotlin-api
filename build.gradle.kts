@@ -1,4 +1,7 @@
+@file:OptIn(ExperimentalWasmDsl::class)
+
 import org.gradle.internal.os.OperatingSystem
+import org.jetbrains.kotlin.gradle.ExperimentalWasmDsl
 import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 import org.jetbrains.kotlin.gradle.plugin.mpp.KotlinNativeTarget
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompilationTask
@@ -33,64 +36,32 @@ openApiGenerate {
     configOptions.put("dateLibrary", "kotlinx-datetime")
 }
 
-val openApiOutputDir = tasks.openApiGenerate.flatMap { it.outputDir }
+val openApiOutputDir: String =
+    rootProject.layout.buildDirectory.dir("generated-sources/main").get().asFile.absolutePath
+
+tasks.openApiGenerate.configure {
+    outputDir = openApiOutputDir
+}
 
 val copyDocs by tasks.registering(DefaultTask::class) {
     doLast {
-        file(openApiOutputDir.map { "$it/README.md" })
+        file("$openApiOutputDir/README.md")
             .copyTo(rootProject.rootDir.resolve("README.md"), overwrite = true)
         rootProject.rootDir.resolve("docs").mkdirs()
-        file(openApiOutputDir.map { "$it/docs" })
+        file("$openApiOutputDir/docs")
             .copyRecursively(rootProject.rootDir.resolve("docs"), overwrite = true)
     }
     dependsOn(tasks.openApiGenerate)
 }
 
-val fixFormData by tasks.registering {
-    val target = openApiOutputDir.map { "$it/src/commonMain/kotlin/org/danilopianini/centralpublisher/api/PublishingApi.kt" }
-    inputs.file(target)
-    outputs.file(target)
-    dependsOn(tasks.openApiGenerate)
-    doLast {
-        val regex = Regex(
-            """^(\s*)formData\s*\{\s*bundle\?\.\s*apply\s*\{\s*append\("bundle",\s*bundle\s*\)\s*\}\s*\}""",
-            setOf(RegexOption.DOT_MATCHES_ALL, RegexOption.MULTILINE),
-        )
-        val file = File(target.get())
-        check(file.exists()) { "File ${file.absolutePath} does not exist" }
-        val content = file.readText()
-        check(regex.containsMatchIn(content)) { "Regex does not match" }
-        val newContent = regex.replace(content) { matchResult ->
-            val (_, indent) = matchResult.groupValues
-            """
-            |${indent}formData {
-            |$indent    bundle?.apply {
-            |$indent        append(
-            |$indent            "bundle",
-            |$indent            bundle,
-            |$indent            io.ktor.http.Headers.build {
-            |$indent                append(io.ktor.http.HttpHeaders.ContentDisposition, "filename=\"${'$'}name\"")
-            |$indent            }
-            |$indent        )
-            |$indent    }
-            |$indent}
-            """.trimMargin()
-        }
-        file.writeText(newContent)
-    }
-}
-
 tasks.openApiGenerate.configure {
     finalizedBy(copyDocs)
-    finalizedBy(fixFormData)
 }
+
+tasks.compileKotlinMetadata.configure { dependsOn(tasks.openApiGenerate) }
 
 tasks.withType<KotlinCompilationTask<*>>().configureEach {
-    dependsOn(fixFormData)
-}
-
-tasks.withType<AnyJar>().configureEach {
-    dependsOn(fixFormData)
+    dependsOn(tasks.openApiGenerate)
 }
 
 kotlin {
@@ -152,12 +123,9 @@ kotlin {
     tvosArm64(nativeSetup)
     tvosSimulatorArm64(nativeSetup)
 
-    sourceSets.configureEach {
-        kotlin.srcDir(openApiOutputDir.map { "$it/src/$name" })
-    }
-
     sourceSets {
         val commonMain by getting {
+            kotlin.srcDir("$openApiOutputDir/src/commonMain/kotlin")
             dependencies {
                 api(libs.kotlinx.datetime)
                 api(libs.bundles.ktor.client)
@@ -166,8 +134,8 @@ kotlin {
             }
         }
         val commonTest by getting {
+            kotlin.srcDir("$openApiOutputDir/src/test/kotlin")
             dependencies {
-                implementation(kotlin("test"))
                 implementation(libs.ktor.client.mock)
             }
         }
