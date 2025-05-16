@@ -134,9 +134,9 @@ kotlin {
             }
         }
         val commonTest by getting {
-            kotlin.srcDir("$openApiOutputDir/src/test/kotlin")
             dependencies {
                 implementation(libs.ktor.client.mock)
+                implementation(kotlin("test"))
             }
         }
         val jvmMain by getting {
