@@ -80,6 +80,10 @@ kotlin {
         }
     }
 
+    wasmWasi {
+        binaries.library()
+    }
+
     js(IR) {
         browser()
         nodejs()
@@ -134,6 +138,7 @@ kotlin {
             }
         }
         val commonTest by getting {
+            kotlin.srcDir(openApiOutputDir.map { "$it/src/test/kotlin" })
             dependencies {
                 implementation(libs.ktor.client.mock)
                 implementation(kotlin("test"))
