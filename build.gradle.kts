@@ -131,10 +131,7 @@ kotlin {
         val commonMain by getting {
             kotlin.srcDir("$openApiOutputDir/src/commonMain/kotlin")
             dependencies {
-                api(libs.kotlinx.datetime)
                 api(libs.bundles.ktor.client)
-                implementation(libs.kotlinx.coroutines.core)
-                implementation(libs.kotlinx.serialization.core)
             }
         }
         val commonTest by getting {
