@@ -1,3 +1,27 @@
+## [3.0.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/3.0.0...3.0.1) (2025-06-06)
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.14.1 ([#159](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/159)) ([a9cc3e3](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/a9cc3e38632ec8f997e46f4a8171503c1a2555d9))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.129 ([#161](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/161)) ([e1d71ae](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e1d71aec1d1df0051df955bfec444810c85cc542))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.131 ([#164](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/164)) ([20922cc](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/20922cc011e9b0ff0169cc161d98a9ba8cbf3c91))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.132 ([#166](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/166)) ([437ec00](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/437ec009e5e9305a1920f6820c65647f857ee085))
+* **deps:** update dependency semantic-release-preconfigured-conventional-commits to v1.1.133 ([#167](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/167)) ([1842ca0](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/1842ca0828f3fe61738a29f7efeb43f4dd09afb4))
+* **deps:** update node.js to 22.16 ([#163](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/163)) ([8b74cb7](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/8b74cb7795e0ca7981e64a2489efcd913bbd0024))
+* **deps:** update plugin com.gradle.develocity to v4.0.2 ([#165](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/165)) ([e4a86f5](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e4a86f505074a77f9e656842edee687774867719))
+* **deps:** update plugin npm-publish to v4.0.4 ([#162](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/162)) ([1fa97f6](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/1fa97f640f2971ecd9f4f85c1c5be80b47030773))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.25 ([#160](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/160)) ([9c2225b](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/9c2225bd7a53e54797d15f65ca9ff4d9bdcd6892))
+* **deps:** update plugin org.gradle.toolchains.foojay-resolver-convention to v1 ([#158](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/158)) ([3dbff19](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/3dbff19c598002f4db51f746ba05cf5346dfb027))
+
+### Bug Fixes
+
+* **deps:** drop kotlinx-datetime, kotlinx-serialization, and kotlinx-coroutines ([20f8e0e](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/20f8e0ef2e27703004cea73e302bfd04672ccf2d))
+* **deps:** drop platform-specific dependencies on Ktor ([07099b7](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/07099b78d9d04f0f5c5f73dc8b9abf39e84a40a0))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v3.7.20 ([#157](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/157)) ([142b40c](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/142b40c8ca8229d3ebbf924c7328931689c3d03d))
+
 ## [3.0.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/2.10.1...3.0.0) (2025-05-19)
 
 ### ⚠ BREAKING CHANGES
