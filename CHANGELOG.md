@@ -1,3 +1,14 @@
+## [3.0.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/3.0.1...3.0.2) (2025-06-06)
+
+### Dependency updates
+
+* **deps:** update dependency gradle to v8.14.2 ([#168](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/168)) ([8495b6b](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/8495b6b8e20261a19160fdbd11c99ddacd15ae2e))
+* **deps:** update plugin gitsemver to v5.1.4 ([#169](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/169)) ([427623a](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/427623a610835ee77fde4830aa0f8768e35709cc))
+
+### Revert previous changes
+
+* **deps:** revert commit 07099b78d9d04f0f5c5f73dc8b9abf39e84a40a0: drop platform-specific dependencies on Ktor ([95598f6](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/95598f63e8bff8cc1e0edee5510de1d168ca505e))
+
 ## [3.0.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/3.0.0...3.0.1) (2025-06-06)
 
 ### Dependency updates
