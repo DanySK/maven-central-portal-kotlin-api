@@ -140,25 +140,9 @@ kotlin {
                 implementation(kotlin("test"))
             }
         }
-        val jvmMain by getting {
-            dependencies {
-                implementation(kotlin("stdlib-jdk7"))
-                implementation(libs.ktor.client.cio.jvm)
-            }
-        }
         val jvmTest by getting {
             dependencies {
                 implementation(kotlin("test-junit"))
-            }
-        }
-        val jsMain by getting {
-            dependencies {
-                api(libs.ktor.client.js)
-            }
-        }
-        val iosMain by getting {
-            dependencies {
-                api(libs.ktor.client.ios)
             }
         }
         all {
