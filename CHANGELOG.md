@@ -1,3 +1,14 @@
+## [3.1.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/3.0.2...3.1.0) (2025-06-09)
+
+### Features
+
+* add support for errors in `DeploymentResponseFiles`. ([6598a3d](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/6598a3dff172b671fecbe0af7fd1a28c125dc192))
+
+### Dependency updates
+
+* **deps:** update plugin npm-publish to v4.0.5 ([#170](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/170)) ([e627e11](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e627e112b6fcf19691abd2d52c79b68bbc31bc76))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.0.26 ([#171](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/171)) ([1196291](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/1196291b386083822c80e420bb69f2ea3f87ec23))
+
 ## [3.0.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/3.0.1...3.0.2) (2025-06-06)
 
 ### Dependency updates
