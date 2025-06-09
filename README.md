@@ -62,6 +62,7 @@ All URIs are relative to *http://localhost*
  - [org.danilopianini.centralpublisher.impl.models.DeployedComponentVersion](docs/DeployedComponentVersion.md)
  - [org.danilopianini.centralpublisher.impl.models.DeployedFileDTO](docs/DeployedFileDTO.md)
  - [org.danilopianini.centralpublisher.impl.models.DeploymentResponseFiles](docs/DeploymentResponseFiles.md)
+ - [org.danilopianini.centralpublisher.impl.models.DeploymentResponseFilesErrors](docs/DeploymentResponseFilesErrors.md)
 
 
 <a id="documentation-for-authorization"></a>

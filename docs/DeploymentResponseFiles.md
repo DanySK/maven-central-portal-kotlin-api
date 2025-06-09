@@ -10,6 +10,7 @@
 | **deploymentType** | [**inline**](#DeploymentType) |  |  [optional] |
 | **createTimestamp** | **kotlin.Double** |  |  [optional] |
 | **purls** | **kotlin.collections.List&lt;kotlin.String&gt;** |  |  [optional] |
+| **errors** | [**DeploymentResponseFilesErrors**](DeploymentResponseFilesErrors.md) |  |  [optional] |
 | **deployedComponentVersions** | [**kotlin.collections.List&lt;DeployedComponentVersion&gt;**](DeployedComponentVersion.md) |  |  [optional] |
 
 
