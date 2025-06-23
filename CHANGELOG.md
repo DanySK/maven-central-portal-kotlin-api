@@ -1,3 +1,14 @@
+## [3.1.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/3.1.0...3.1.1) (2025-06-23)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.2.0 ([#176](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/176)) ([f356ed9](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/f356ed9e3384a4b0449517271ba080653f0a3c56))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4 ([#172](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/172)) ([09e553c](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/09e553c3fc4357170b8370bbace129ac748d95ae))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.1 ([#174](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/174)) ([c8bd8ea](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/c8bd8ea9700679d2d1d4d3933aaae428766cc902))
+
 ## [3.1.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/3.0.2...3.1.0) (2025-06-09)
 
 ### Features
