@@ -1,3 +1,13 @@
+## [3.3.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/3.3.0...3.3.1) (2025-06-27)
+
+### Dependency updates
+
+* **deps:** update node.js to 22.17 ([#179](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/179)) ([aea9b33](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/aea9b33d8747a93e95c62a82bc34757a498bdc1c))
+
+### Documentation
+
+* update documentation ([08bd4cf](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/08bd4cf40274e91405ba6d7fb90faf9f638dbb19))
+
 ## [3.3.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/3.2.0...3.3.0) (2025-06-25)
 
 ### Dependency updates
