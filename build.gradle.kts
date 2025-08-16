@@ -30,7 +30,7 @@ openApiGenerate {
     packageName = "org.danilopianini.centralpublisher.impl"
     apiPackage = "org.danilopianini.centralpublisher.api"
     generatorName = "kotlin"
-    library = "multiplatform"
+    library.set("multiplatform")
     groupId = project.group.toString()
     id = project.name
     configOptions.put("dateLibrary", "kotlinx-datetime")
@@ -247,4 +247,11 @@ npmPublish {
             dry.set(npmToken.isNullOrBlank())
         }
     }
+}
+
+tasks.named("kotlinStoreYarnLock").configure {
+    dependsOn(tasks.named("kotlinUpgradeYarnLock"))
+}
+tasks.named("kotlinWasmStoreYarnLock").configure {
+    dependsOn(tasks.named("kotlinWasmUpgradeYarnLock"))
 }
