@@ -30,7 +30,7 @@ openApiGenerate {
     packageName = "org.danilopianini.centralpublisher.impl"
     apiPackage = "org.danilopianini.centralpublisher.api"
     generatorName = "kotlin"
-    library = "multiplatform"
+    library.set("multiplatform")
     groupId = project.group.toString()
     id = project.name
     configOptions.put("dateLibrary", "kotlinx-datetime")
@@ -56,6 +56,10 @@ val copyDocs by tasks.registering(DefaultTask::class) {
 
 tasks.openApiGenerate.configure {
     finalizedBy(copyDocs)
+}
+
+tasks.withType<AnyJar>().configureEach {
+    dependsOn(tasks.openApiGenerate)
 }
 
 tasks.compileKotlinMetadata.configure { dependsOn(tasks.openApiGenerate) }
@@ -131,14 +135,10 @@ kotlin {
         val commonMain by getting {
             kotlin.srcDir("$openApiOutputDir/src/commonMain/kotlin")
             dependencies {
-                api(libs.kotlinx.datetime)
                 api(libs.bundles.ktor.client)
-                implementation(libs.kotlinx.coroutines.core)
-                implementation(libs.kotlinx.serialization.core)
             }
         }
         val commonTest by getting {
-            kotlin.srcDir(openApiOutputDir.map { "$it/src/test/kotlin" })
             dependencies {
                 implementation(libs.ktor.client.mock)
                 implementation(kotlin("test"))
@@ -150,11 +150,7 @@ kotlin {
                 implementation(libs.ktor.client.cio.jvm)
             }
         }
-        val jvmTest by getting {
-            dependencies {
-                implementation(kotlin("test-junit"))
-            }
-        }
+        val jvmTest by getting { }
         val jsMain by getting {
             dependencies {
                 api(libs.ktor.client.js)
@@ -255,4 +251,11 @@ npmPublish {
             dry.set(npmToken.isNullOrBlank())
         }
     }
+}
+
+tasks.named("kotlinStoreYarnLock").configure {
+    dependsOn(tasks.named("kotlinUpgradeYarnLock"))
+}
+tasks.named("kotlinWasmStoreYarnLock").configure {
+    dependsOn(tasks.named("kotlinWasmUpgradeYarnLock"))
 }
