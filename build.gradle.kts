@@ -25,37 +25,34 @@ repositories {
     mavenCentral()
 }
 
+val openApiSpec = rootProject.layout.projectDirectory.file("openapi/central-publisher-api.json")
+val openApiOutputDir = rootProject.layout.buildDirectory.dir("generated-sources/main")
+
 openApiGenerate {
-    inputSpec = rootProject.projectDir.resolve("openapi").resolve("central-publisher-api.json").absolutePath
+    inputSpec = openApiSpec
     packageName = "org.danilopianini.centralpublisher.impl"
     apiPackage = "org.danilopianini.centralpublisher.api"
     generatorName = "kotlin"
-    library.set("multiplatform")
+    library = "multiplatform"
     groupId = project.group.toString()
     id = project.name
     configOptions.put("dateLibrary", "kotlinx-datetime")
+    outputDir = openApiOutputDir
 }
 
-val openApiOutputDir: String =
-    rootProject.layout.buildDirectory.dir("generated-sources/main").get().asFile.absolutePath
-
 tasks.openApiGenerate.configure {
-    outputDir = openApiOutputDir
+    finalizedBy("copyDocs")
 }
 
 val copyDocs by tasks.registering(DefaultTask::class) {
     doLast {
-        file("$openApiOutputDir/README.md")
+        openApiOutputDir.get().file("README.md").asFile
             .copyTo(rootProject.rootDir.resolve("README.md"), overwrite = true)
         rootProject.rootDir.resolve("docs").mkdirs()
-        file("$openApiOutputDir/docs")
+        openApiOutputDir.get().dir("docs").asFile
             .copyRecursively(rootProject.rootDir.resolve("docs"), overwrite = true)
     }
     dependsOn(tasks.openApiGenerate)
-}
-
-tasks.openApiGenerate.configure {
-    finalizedBy(copyDocs)
 }
 
 tasks.withType<AnyJar>().configureEach {
@@ -136,7 +133,7 @@ kotlin {
 
     sourceSets {
         val commonMain by getting {
-            kotlin.srcDir("$openApiOutputDir/src/commonMain/kotlin")
+            kotlin.srcDir(openApiOutputDir.map { it.dir("src/commonMain/kotlin").asFile })
             dependencies {
                 api(libs.bundles.ktor.client)
             }
@@ -177,7 +174,7 @@ kotlin {
         os.isWindows -> kotlin.targets.filterNot { "mingw" in it.name }
         os.isMacOsX -> kotlin.targets.filter { "linux" in it.name || "mingw" in it.name }
         else -> emptyList()
-    }.mapNotNull { it as? KotlinNativeTarget }
+    }.filterIsInstance<KotlinNativeTarget>()
 
     configure(excludeTargets) {
         compilations.configureEach {
