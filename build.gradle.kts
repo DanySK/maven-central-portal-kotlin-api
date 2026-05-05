@@ -126,6 +126,13 @@ kotlin {
     watchosSimulatorArm64(nativeSetup)
     tvosArm64(nativeSetup)
     tvosSimulatorArm64(nativeSetup)
+    /*
+     * Android native
+     */
+    androidNativeArm32(nativeSetup)
+    androidNativeArm64(nativeSetup)
+    androidNativeX86(nativeSetup)
+    androidNativeX64(nativeSetup)
 
     sourceSets {
         val commonMain by getting {
