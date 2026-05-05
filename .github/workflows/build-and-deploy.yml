@@ -61,9 +61,11 @@ jobs:
       packages: write
     steps:
       - name: Checkout
-        uses: danysk/checkout-classic@1.0.0
+        uses: actions/checkout@v6.0.2
         with:
-          token: ${{ github.token }}
+          fetch-depth: 0
+          fetch-tags: true
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
       - name: Install Node
         uses: actions/setup-node@v6.4.0
         with:
