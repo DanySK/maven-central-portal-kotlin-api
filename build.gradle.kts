@@ -122,6 +122,7 @@ kotlin {
     iosSimulatorArm64(nativeSetup)
     watchosArm32(nativeSetup)
     watchosArm64(nativeSetup)
+    watchosDeviceArm64(nativeSetup)
     watchosSimulatorArm64(nativeSetup)
     tvosArm64(nativeSetup)
     tvosSimulatorArm64(nativeSetup)
