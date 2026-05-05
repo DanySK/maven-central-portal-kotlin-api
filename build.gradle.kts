@@ -117,7 +117,6 @@ kotlin {
     /*
      * Apple OSs
      */
-    macosX64(nativeSetup)
     macosArm64(nativeSetup)
     iosArm64(nativeSetup)
     iosSimulatorArm64(nativeSetup)
