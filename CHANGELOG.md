@@ -1,3 +1,17 @@
+## [4.1.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.1.0...4.1.1) (2026-06-03)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.4.0 ([#345](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/345)) ([baf48f5](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/baf48f595e1e917ad84420e24392139168e20520))
+* **deps:** update node.js to 24.16 ([#342](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/342)) ([5596dcf](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/5596dcffae154ab91178d483305a17ce199f08cb))
+* **deps:** update plugin com.gradle.develocity to v4.4.2 ([#343](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/343)) ([9a08129](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/9a081296a267fd94adce13a0a1ea5e7b8358085d))
+* **deps:** update plugin gitsemver to v7.0.20 ([#341](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/341)) ([ad14da3](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/ad14da396558727fbd88843b0b586725d060e89f))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v6.0.3 ([#344](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/344)) ([a134de5](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/a134de527b2e6c9882be6f8d015b90fdde4aa6cf))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.33 ([#340](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/340)) ([1bfbafa](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/1bfbafa62ca884bfe160a14399ac336ab34bcccc))
+
 ## [4.1.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.0.1...4.1.0) (2026-05-14)
 
 ### Dependency updates
