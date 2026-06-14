@@ -26,7 +26,7 @@ repositories {
 }
 
 openApiGenerate {
-    inputSpec = rootProject.projectDir.resolve("openapi").resolve("central-publisher-api.json").absolutePath
+    inputSpec = rootProject.layout.projectDirectory.file("openapi/central-publisher-api.json")
     packageName = "org.danilopianini.centralpublisher.impl"
     apiPackage = "org.danilopianini.centralpublisher.api"
     generatorName = "kotlin"
@@ -36,8 +36,8 @@ openApiGenerate {
     configOptions.put("dateLibrary", "kotlinx-datetime")
 }
 
-val openApiOutputDir: String =
-    rootProject.layout.buildDirectory.dir("generated-sources/main").get().asFile.absolutePath
+val openApiOutputDir =
+    rootProject.layout.buildDirectory.dir("generated-sources/main")
 
 tasks.openApiGenerate.configure {
     outputDir = openApiOutputDir
@@ -45,10 +45,11 @@ tasks.openApiGenerate.configure {
 
 val copyDocs by tasks.registering(DefaultTask::class) {
     doLast {
-        file("$openApiOutputDir/README.md")
+        val generatedOutput = openApiOutputDir.get().asFile
+        generatedOutput.resolve("README.md")
             .copyTo(rootProject.rootDir.resolve("README.md"), overwrite = true)
         rootProject.rootDir.resolve("docs").mkdirs()
-        file("$openApiOutputDir/docs")
+        generatedOutput.resolve("docs")
             .copyRecursively(rootProject.rootDir.resolve("docs"), overwrite = true)
     }
     dependsOn(tasks.openApiGenerate)
@@ -84,7 +85,7 @@ kotlin {
         }
     }
 
-    js(IR) {
+    js {
         browser()
         nodejs()
         binaries.library()
@@ -136,7 +137,7 @@ kotlin {
 
     sourceSets {
         val commonMain by getting {
-            kotlin.srcDir("$openApiOutputDir/src/commonMain/kotlin")
+            kotlin.srcDir(openApiOutputDir.map { it.dir("src/commonMain/kotlin") })
             dependencies {
                 api(libs.bundles.ktor.client)
             }

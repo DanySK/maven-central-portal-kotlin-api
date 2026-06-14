@@ -48,11 +48,15 @@ try {
 ### Authorization
 
 
-Configure BasicAuth:
-    ApiClient.username = ""
-    ApiClient.password = ""
-Configure BearerAuth:
-    ApiClient.accessToken = ""
+Configure BasicAuth statically:
+```kotlin
+ApiClient.username = ""
+ApiClient.password = ""
+```
+Configure BearerAuth statically:
+```kotlin
+ApiClient.accessToken = ""
+```
 
 ### HTTP request headers
 
@@ -103,11 +107,15 @@ try {
 ### Authorization
 
 
-Configure BasicAuth:
-    ApiClient.username = ""
-    ApiClient.password = ""
-Configure BearerAuth:
-    ApiClient.accessToken = ""
+Configure BasicAuth statically:
+```kotlin
+ApiClient.username = ""
+ApiClient.password = ""
+```
+Configure BearerAuth statically:
+```kotlin
+ApiClient.accessToken = ""
+```
 
 ### HTTP request headers
 
