@@ -1,3 +1,13 @@
+## [4.2.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.2.0...4.2.1) (2026-06-16)
+
+### Dependency updates
+
+* **deps:** update plugin com.gradle.develocity to v4.4.3 ([#353](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/353)) ([ec464a1](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/ec464a1811542441f54e39b4bea02684aadba296))
+
+### Documentation
+
+* update documentation ([74cfe69](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/74cfe69cefbf0dd60dcf0399225c2dd132dc9a05))
+
 ## [4.2.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.1.1...4.2.0) (2026-06-14)
 
 ### Dependency updates
