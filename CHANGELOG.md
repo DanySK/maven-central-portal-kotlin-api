@@ -1,3 +1,19 @@
+## [4.3.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.2.1...4.3.0) (2026-06-25)
+
+### Dependency updates
+
+* **api-deps:** update ktor monorepo to v3.5.1 ([#361](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/361)) ([f2508a2](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/f2508a24b70d984945c3fc6f67b39096030a284a))
+* **deps:** update gradle to v9.6.0 ([#357](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/357)) ([91604e0](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/91604e076c9536c689efc2230ed214ae237ad0f1))
+* **deps:** update node.js to 24.17 ([#359](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/359)) ([3c48ef0](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/3c48ef08cceebe5bffb5d1778d34cbb870ff3455))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.19 ([#356](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/356)) ([e4f9fe2](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e4f9fe24e35f8ca9063c37bb9021b4c4baa3c0e8))
+* **deps:** update plugin publishoncentral to v9.2.6 ([#358](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/358)) ([297d1f6](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/297d1f6ab350d8f366bb5c5aa6a47ff3c8541210))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v7 ([#355](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/355)) ([83db8e8](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/83db8e80a418a6baf307a9408bc6826855b1b725))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.36 ([#354](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/354)) ([bb92761](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/bb927616b7c1d2408ad8dd7e18da556f2ef74bc1))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.37 ([#360](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/360)) ([808f0b0](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/808f0b0cc071736a38655a7bf5b5bfa61bcc2247))
+
 ## [4.2.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.2.0...4.2.1) (2026-06-16)
 
 ### Dependency updates
