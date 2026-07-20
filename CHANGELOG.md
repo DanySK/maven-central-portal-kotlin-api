@@ -1,3 +1,15 @@
+## [4.4.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.3.1...4.4.0) (2026-07-20)
+
+### Dependency updates
+
+* **api-deps:** update plugin openapi-generator to v7.24.0 ([#378](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/378)) ([1ca1334](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/1ca1334081956b4bf6d996f99735bf7fb11e5b97))
+* **deps:** update plugin gitsemver to v7.0.23 ([#375](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/375)) ([8aef7a3](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/8aef7a3ab62d1774ff691788497a1c372035f958))
+
+### Build and continuous integration
+
+* **deps:** update actions/checkout action to v7.0.1 ([#377](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/377)) ([5189805](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/51898050a411cb37c8b670f9b0096b2aa4290611))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.41 ([#376](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/376)) ([b9f0a9e](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/b9f0a9e86b17744028b37b503bb1d111d72060a6))
+
 ## [4.3.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.3.0...4.3.1) (2026-07-14)
 
 ### Dependency updates
