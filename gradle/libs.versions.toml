@@ -1,6 +1,6 @@
 [versions]
 kotlin = "2.4.10"
-ktor = "3.5.1"
+ktor = "3.5.2"
 
 [libraries]
 ktor-client-cio-jvm = { module = "io.ktor:ktor-client-cio-jvm", version.ref = "ktor" }
