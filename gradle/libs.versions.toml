@@ -30,4 +30,4 @@ kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", versi
 npm-publish = "org.danilopianini.npm.publish:4.1.11"
 openapi-generator = "org.openapi.generator:7.24.0"
 publishOnCentral = "org.danilopianini.publish-on-central:9.2.9"
-taskTree = "com.dorongold.task-tree:4.0.1"
+taskTree = "com.dorongold.task-tree:4.0.2"
