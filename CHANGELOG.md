@@ -1,3 +1,9 @@
+## [4.6.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.6.0...4.6.1) (2026-08-25)
+
+### Documentation
+
+* update documentation ([8c13bfd](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/8c13bfd4cbe30d691dab7a4add8404c930ee9ee2))
+
 ## [4.6.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.5.0...4.6.0) (2026-08-25)
 
 ### Dependency updates
