@@ -38,9 +38,9 @@ try {
 ```
 
 ### Parameters
-| **deploymentId** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **deploymentId** | **kotlin.String**| The deployment identifier, which was obtained by a call to &#x60;/api/v1/publisher/upload&#x60;. | |
 | **relativePath** | **kotlin.String**| The full path to a specific file from a deployment bundle. | |
 
 ### Return type

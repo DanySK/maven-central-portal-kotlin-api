@@ -204,10 +204,10 @@ try {
 ```
 
 ### Parameters
-| **name** | **kotlin.String**| Deployment/bundle name, optional (will use attached file name if not present). | [optional] |
-| **publishingType** | **kotlin.String**| Whether to have the deployment stop in the &#x60;VALIDATED&#x60; state and require a user to log in and manually approve its progression, or to automatically go directly to &#x60;PUBLISHING&#x60; when validation has passed. | [optional] [enum: USER_MANAGED, AUTOMATIC] |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **name** | **kotlin.String**| Deployment/bundle name, optional (will use attached file name if not present). | [optional] |
+| **publishingType** | **kotlin.String**| Whether to have the deployment stop in the &#x60;VALIDATED&#x60; state and require a user to log in and manually approve its progression, or to automatically go directly to &#x60;PUBLISHING&#x60; when validation has passed. | [optional] [enum: USER_MANAGED, AUTOMATIC] |
 | **bundle** | **io.ktor.client.request.forms.FormPart&lt;io.ktor.client.request.forms.InputProvider&gt;**|  | [optional] |
 
 ### Return type

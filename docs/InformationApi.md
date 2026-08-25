@@ -94,10 +94,10 @@ try {
 ```
 
 ### Parameters
-| **namespace** | **kotlin.String**| namespace of component | |
-| **name** | **kotlin.String**| name of component | |
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
+| **namespace** | **kotlin.String**| namespace of component | |
+| **name** | **kotlin.String**| name of component | |
 | **version** | **kotlin.String**| version of component | |
 
 ### Return type
