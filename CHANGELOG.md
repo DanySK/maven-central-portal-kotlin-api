@@ -1,3 +1,10 @@
+## [4.6.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.6.1...4.6.2) (2026-09-07)
+
+### Dependency updates
+
+* **core-deps:** update kotlin monorepo to v2.4.20 ([#393](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/393)) ([cff2e15](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/cff2e1505007fe48866dbb3304afca423fc9bd9d))
+* **deps:** update node.js to 24.20 ([#392](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/392)) ([e71783d](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/e71783d41e3a580c38a9ed607972d65571b618bc))
+
 ## [4.6.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.6.0...4.6.1) (2026-08-25)
 
 ### Documentation
