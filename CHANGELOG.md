@@ -1,3 +1,26 @@
+## [4.7.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.6.2...4.7.0) (2026-10-07)
+
+### Dependency updates
+
+* **api-deps:** update plugin openapi-generator to v7.26.0 ([71d0213](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/71d0213782fdec12dd6442d5ae6f7a39dc3b9478))
+* **deps:** update gradle to v9.8.0 ([#405](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/405)) ([741ecf8](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/741ecf8b41b509be1e1fcebf3b87bed2a2c069e5))
+* **deps:** update node.js to 24.21 ([#399](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/399)) ([fd2671b](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/fd2671b85c429de35ec88e9e99b33f79033d3b2a))
+* **deps:** update plugin com.gradle.develocity to v4.5.1 ([#397](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/397)) ([ea29264](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/ea292647173ebec6339c78929a1fd5352397a922))
+* **deps:** update plugin com.gradle.develocity to v4.6.0 ([#406](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/406)) ([a045402](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/a0454022b2dd30bc57d58f07af89078aea928206))
+* **deps:** update plugin gitsemver to v7.0.24 ([#394](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/394)) ([72eddcf](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/72eddcf1dae63d8afaff8c1fb92266b0453b7f60))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.24 ([#395](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/395)) ([dc0bb8d](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/dc0bb8d7cc43e938e812ec6d80a5abcf76887be5))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.25 ([#407](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/407)) ([6d234b5](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/6d234b5e0ccb205580c42d75269525f1a5bb7f13))
+* **deps:** update plugin publishoncentral to v9.2.11 ([#396](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/396)) ([6ffe7e6](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/6ffe7e62ff2ecd591f951f173645241d48caa095))
+* **deps:** update plugin publishoncentral to v9.2.12 ([#404](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/404)) ([a88963f](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/a88963f6bb5f2c58193e33b4fde07f5d830d0334))
+
+### Build and continuous integration
+
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.45 ([#398](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/398)) ([6b0cb19](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/6b0cb19b3ce44f89ef12daf593753fb22f1b25c9))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.46 ([#400](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/400)) ([084e572](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/084e5726ddb82aa531db075bb98d24ccc3d3de20))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.47 ([#402](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/402)) ([63057d9](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/63057d974b4b0db7a8378c4aea24256a3ef295f7))
+* **deps:** update danysk/build-check-deploy-gradle-action action to v4.0.48 ([#408](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/408)) ([ddf4c82](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/ddf4c82c781322c53a020342aa4668ae3b227b0b))
+* **deps:** update dependency ubuntu to v26 ([#403](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/403)) ([4993862](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/4993862c2bf58fc351058ee9ebd0b440e6067d61))
+
 ## [4.6.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.6.1...4.6.2) (2026-09-07)
 
 ### Dependency updates
