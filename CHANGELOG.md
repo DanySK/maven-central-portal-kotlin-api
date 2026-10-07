@@ -1,3 +1,13 @@
+## [4.7.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.7.0...4.7.1) (2026-10-07)
+
+### Dependency updates
+
+* **deps:** update gradle to v9.8.1 ([aabdf33](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/aabdf332ec719f4a5321c1c8ff5b281ffbaee5bb))
+
+### Documentation
+
+* update documentation ([78678ea](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/78678ea07891e0f30f6e01b904b6f3a64cf59d85))
+
 ## [4.7.0](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.6.2...4.7.0) (2026-10-07)
 
 ### Dependency updates
