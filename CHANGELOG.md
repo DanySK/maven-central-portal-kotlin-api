@@ -1,3 +1,15 @@
+## [4.7.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.7.1...4.7.2) (2026-10-08)
+
+### Dependency updates
+
+* **core-deps:** update dependency org.jetbrains.kotlin.multiplatform to v2.4.21 ([9203110](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/9203110e986d653b21cd6a484fcd88dc0dc55e53))
+* **deps:** update plugin org.danilopianini.gradle-pre-commit-git-hooks to v2.1.26 ([#411](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/411)) ([9cef1d3](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/9cef1d3dc1398aafe2d69d2cf67cb81d71a299cb))
+* **deps:** update plugin publishoncentral to v9.2.13 ([#412](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/412)) ([7df043f](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/7df043f091e39827d0adf2ecc4054cec17bd0200))
+
+### Build and continuous integration
+
+* **deps:** update actions/setup-node action to v7.1.0 ([#413](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/413)) ([2a22c24](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/2a22c24534f76297263e99ffdb02610c8ed33d21))
+
 ## [4.7.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.7.0...4.7.1) (2026-10-07)
 
 ### Dependency updates
