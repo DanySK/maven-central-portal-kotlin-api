@@ -1,3 +1,9 @@
+## [4.8.2](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.8.1...4.8.2) (2026-11-05)
+
+### Documentation
+
+* **deps:** update plugin dokka to v2.3.0 ([#433](https://github.com/DanySK/maven-central-portal-kotlin-api/issues/433)) ([501919e](https://github.com/DanySK/maven-central-portal-kotlin-api/commit/501919e158e7c4e4201a8a80796f85689b2998a0))
+
 ## [4.8.1](https://github.com/DanySK/maven-central-portal-kotlin-api/compare/4.8.0...4.8.1) (2026-11-05)
 
 ### Documentation
